@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans Display', sans-serif;
+
+
+  
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(-310deg, green,white);
+  
+}
+
+section {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem;
+  border-radius: 10px;
+  border:solid 2px green;
+  padding: 1rem;
+  text-align: center;
+  background-image: linear-gradient(-310deg, white,green );
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 4px solid #ccc;
+  color: darkgreen;
+  margin: 0 0 1rem 0;
+  border-radius: 5px;
+  background-color:darkgreen;
+  border:solid 2px green;
+  background-image: linear-gradient(310deg, lightgreen,white );
+}
+
+p {
+  font-size: 1.50rem;
+  font-weight: bold;
+  background-color: white;
+  padding: 0.5rem;
+  color: darkgreen;
+  border-radius: 5px;
+  border:solid 2px green;
+  background-image: linear-gradient(310deg, lightgreen,white);
+}
+
+input {
+  font: inherit;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-weight:bold;
+  color:red;
+  height:50px;
+  width:100%;
+  border-radius:5px;
+  font-size: 2rem;
+  animation: myAnimation 1s linear 1s infinite alternate;
+         background: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: red;
+  background-color: white;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 2px solid #ff0077;
+  background-color: #ff0077;
+  color: white;
+  padding: 0.05rem 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+button:hover,
+button:active {
+  background-color: #ec3169;
+  border-color: #ec3169;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+  }
+@keyframes myAnimation {
+         from {
+            background: white;
+            
+         }
+         to {
+            background: #ff3f15;
+            
+         }
+      }

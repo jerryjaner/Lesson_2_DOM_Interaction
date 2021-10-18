@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Styling</h1>
+    </header>
+    <section id="assignment">
+      <!-- 1) Fetch the user input and use it as a CSS class -->
+      <!-- The entered class should be added to the below paragraph -->
+      <input type="text" v-on:input="message=$event.target.value" placeholder="user1 or user2"/>
+      <hr/>
+      <!-- (available classes: "user1", "user2") -->
+      <p v-show="display" v-bind:class="message">
+        {{message}}
+      </p>
+      <button v-on:click="display=! display">{{display ? 'Hide' : 'Show' }}</button>
+      <!-- 2) Use the "visible" and "hidden" classes to show/ hide the above paragraph -->
+      <!-- Clicking the button should toggle between the two options -->
+
+      <!-- 3) Add dynamic inline styling to the below paragraph and let the user enter a background-color -->
+      <hr/>
+      <input type="text" v-on:input="mm=$event.target.value" placeholder="Any color..."/>
+      <p v-bind:style="{'background-color':mm}">Style me inline!</p>
+    </section>
+  </body>
+</html>
